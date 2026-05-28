@@ -1,50 +1,29 @@
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Strict React mode
   reactStrictMode: true,
-
-  // Remove X-Powered-By header
   poweredByHeader: false,
-
-  // Image optimization config
   images: {
-    // Add external domains here when using a CDN or CMS (e.g., Sanity, Cloudinary)
-    // remotePatterns: [{ protocol: "https", hostname: "cdn.sanity.io" }],
     formats: ["image/avif", "image/webp"],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256],
     minimumCacheTTL: 60,
   },
-
-  // Production security headers
   async headers() {
     return [
       {
         source: "/(.*)",
         headers: [
-          { key: "X-Frame-Options",           value: "DENY" },
-          { key: "X-Content-Type-Options",     value: "nosniff" },
-          { key: "Referrer-Policy",            value: "strict-origin-when-cross-origin" },
-          { key: "Permissions-Policy",         value: "camera=(), microphone=(), geolocation=()" },
+          { key: "X-Frame-Options",       value: "DENY" },
+          { key: "X-Content-Type-Options", value: "nosniff" },
+          { key: "Referrer-Policy",        value: "strict-origin-when-cross-origin" },
+          { key: "Permissions-Policy",     value: "camera=(), microphone=(), geolocation=()" },
         ],
       },
     ];
   },
-
-  // Canonical redirect: non-www → www (or reverse — pick one)
   async redirects() {
-    return [
-      // Uncomment to enforce non-www:
-      // {
-      //   source: "/(.*)",
-      //   has: [{ type: "host", value: "www.raynardla.com" }],
-      //   destination: "https://raynardla.com/:path*",
-      //   permanent: true,
-      // },
-    ];
+    return [];
   },
 };
 
 export default nextConfig;
-
-legacy-peer-deps=true
