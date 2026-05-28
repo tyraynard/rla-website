@@ -33,6 +33,11 @@ const config: Config = {
           "sage":       "#6E8C6C",
           "sage-light": "#8FAD8D",
           "sage-pale":  "#B8CCB7",
+          "sienna-deep":  "#2E1508",
+          "sienna-muted": "#7A3E1C",
+          "sienna":       "#B5622A",
+          "sienna-light": "#CC7A42",
+          "sienna-pale":  "#E8A87A",
         },
       },
       fontFamily: {
@@ -101,15 +106,10 @@ const config: Config = {
           from: { opacity: "0" },
           to:   { opacity: "1" },
         },
-        "slide-right": {
-          from: { transform: "scaleX(0)" },
-          to:   { transform: "scaleX(1)" },
-        },
       },
       animation: {
-        "fade-up":     "fade-up 0.7s cubic-bezier(0.16,1,0.3,1) both",
-        "fade-in":     "fade-in 0.5s cubic-bezier(0.16,1,0.3,1) both",
-        "slide-right": "slide-right 0.6s cubic-bezier(0.16,1,0.3,1) both",
+        "fade-up": "fade-up 0.7s cubic-bezier(0.16,1,0.3,1) both",
+        "fade-in": "fade-in 0.5s cubic-bezier(0.16,1,0.3,1) both",
       },
       zIndex: {
         "nav":     "40",

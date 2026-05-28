@@ -62,7 +62,7 @@ export function AboutSection() {
               {DIFFERENTIATORS.map((item) => (
                 <li key={item.title} className="flex gap-4">
                   <span
-                    className="mt-1.5 block w-5 h-px bg-rla-sage-muted shrink-0"
+                    className="mt-1.5 block w-5 h-px bg-rla-sienna-muted shrink-0"
                     aria-hidden="true"
                   />
                   <div>
@@ -86,19 +86,27 @@ export function AboutSection() {
                 Tyler Raynard, Founder
               </cite>
             </blockquote>
+
+            {/* Trust anchor */}
+            <div className="mt-8 flex items-start gap-4 p-5 bg-rla-iron border border-rla-border rounded-sm">
+              <span
+                className="mt-1 w-1.5 h-1.5 rounded-full bg-rla-sienna shrink-0"
+                aria-hidden="true"
+              />
+              <p className="text-body-sm font-body font-light text-rla-stone leading-relaxed">
+                <span className="text-rla-cream font-medium">RLA operates as an independent advisor.</span>{" "}
+                No development interest. No ownership stake. No conflict of interest — ever.
+                You get objective analysis from someone whose only incentive is giving you
+                the right answer.
+              </p>
+            </div>
           </div>
 
           {/* ── Right: Photo ── */}
           <div className="relative pb-8 md:pb-0">
-            {/*
-             * Photo container — image layers correctly:
-             * 1. Gradient placeholder (behind image)
-             * 2. RLA monogram on placeholder (behind image)
-             * 3. next/image (front, covers placeholder when loaded)
-             */}
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden bg-rla-iron border border-rla-border">
 
-              {/* Gradient placeholder — renders behind image */}
+              {/* Gradient placeholder */}
               <div
                 className="absolute inset-0"
                 style={{
@@ -109,7 +117,7 @@ export function AboutSection() {
                 aria-hidden="true"
               />
 
-              {/* Decorative monogram on placeholder */}
+              {/* Decorative monogram */}
               <div
                 className="absolute inset-0 flex items-center justify-center pointer-events-none"
                 aria-hidden="true"
@@ -119,7 +127,7 @@ export function AboutSection() {
                 </span>
               </div>
 
-              {/* Photo — sits in front of placeholder via DOM order */}
+              {/* Photo */}
               <Image
                 src="/about-photo.jpg"
                 alt="Tyler Raynard, Founder of Raynard Land Advisory"
@@ -132,25 +140,5 @@ export function AboutSection() {
             {/* Floating credential card */}
             <aside
               className="absolute -bottom-2 -left-4 md:left-auto md:-right-6
-                         bg-rla-obsidian border border-rla-border rounded-sm p-5
-                         shadow-card min-w-[200px]"
-              aria-label="Credentials"
-            >
-              <p className="text-eyebrow uppercase tracking-widest text-rla-smoke font-body mb-3">
-                Credentials
-              </p>
-              <ul className="space-y-2">
-                {CREDENTIALS.map((cred) => (
-                  <li key={cred} className="flex items-center gap-2">
-                    <span className="w-1 h-1 rounded-full bg-rla-sage shrink-0" aria-hidden="true" />
-                    <span className="text-ui-xs font-body text-rla-parchment">{cred}</span>
-                  </li>
-                ))}
-              </ul>
-            </aside>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
+                         bg-rla-obsidian border border-rla-border rounded-sm
+                         

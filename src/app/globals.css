@@ -7,7 +7,9 @@
   :root {
     --font-display: "Cormorant Garamond", Georgia, serif;
     --font-body:    "DM Sans", system-ui, sans-serif;
-    --color-sage:   #6E8C6C;
+    --color-sage:         #6E8C6C;
+    --color-sienna:       #B5622A;
+    --color-sienna-muted: #7A3E1C;
     --transition:   250ms cubic-bezier(0.16, 1, 0.3, 1);
   }
 
@@ -84,7 +86,7 @@
     @apply py-section-sm lg:py-section;
   }
 
-  /* Eyebrow label + decorative line */
+  /* Eyebrow label — sienna rule line, sage text */
   .eyebrow-label {
     @apply inline-flex items-center gap-3
            text-eyebrow font-body font-medium uppercase tracking-[0.18em]
@@ -93,10 +95,10 @@
 
   .eyebrow-label::before {
     content: "";
-    @apply block h-px w-8 bg-rla-sage-muted shrink-0;
+    @apply block h-px w-8 bg-rla-sienna-muted shrink-0;
   }
 
-  /* Card hover transition — apply to card wrappers */
+  /* Card hover transition */
   .card-base {
     @apply bg-rla-charcoal border border-rla-border rounded-sm
            transition-all duration-350 ease-out-expo
