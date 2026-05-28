@@ -61,7 +61,7 @@ export function HeroSection() {
             className="font-display font-light text-display-2xl text-rla-white animate-fade-up"
             style={{ animationDelay: "200ms" }}
           >
-            Changing Communities
+            Shaping Communities
             <br />
             <span className="text-rla-cream">From the Ground Up</span>
           </h1>
