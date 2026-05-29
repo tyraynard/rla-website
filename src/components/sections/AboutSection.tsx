@@ -30,7 +30,6 @@ export function AboutSection() {
     >
       <div className="container-rla">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
-
           <div>
             <p className="eyebrow-label mb-6">Who We Are</p>
 
@@ -46,14 +45,15 @@ export function AboutSection() {
             <p className="text-body-lg text-rla-parchment font-body font-light leading-relaxed mb-6">
               Tyler Raynard brings 14+ years of experience spanning mortgage
               lending, land development, and real estate transactions, a
-              combination of disciplines that virtually no single advisor can match.
+              combination of disciplines that virtually no single advisor can
+              match.
             </p>
 
             <p className="text-body-md text-rla-stone font-body font-light leading-relaxed mb-10">
               That three-sided expertise gives clients complete visibility at
-              every stage of a project: from acquisition financing and feasibility
-              through horizontal cost estimating and final disposition.
-              No blind spots. No hand-offs to generalists.
+              every stage of a project: from acquisition financing and
+              feasibility through horizontal cost estimating and final
+              disposition. No blind spots. No hand-offs to generalists.
             </p>
 
             <ul className="space-y-6" aria-label="Areas of expertise">
@@ -90,10 +90,12 @@ export function AboutSection() {
                 aria-hidden="true"
               />
               <p className="text-body-sm font-body font-light text-rla-stone leading-relaxed">
-                <span className="text-rla-cream font-medium">RLA operates as an independent advisor.</span>{" "}
-                No development interest. No ownership stake. No conflict of interest. Ever.
-                You get objective analysis from someone whose only incentive is giving you
-                the right answer.
+                <span className="text-rla-cream font-medium">
+                  RLA operates as an independent advisor.
+                </span>{" "}
+                No development interest. No ownership stake. No conflict of
+                interest. Ever. You get objective analysis from someone whose
+                only incentive is giving you the right answer.
               </p>
             </div>
           </div>
@@ -126,9 +128,7 @@ export function AboutSection() {
             </div>
 
             <aside
-              className="absolute -bottom-2 -left-4 md:left-auto md:-right-6
-                         bg-rla-obsidian border border-rla-border rounded-sm p-5
-                         shadow-card min-w-[200px]"
+              className="absolute -bottom-2 -left-4 md:left-auto md:-right-6 bg-rla-obsidian border border-rla-border rounded-sm p-5 shadow-card min-w-[200px]"
               aria-label="Credentials"
             >
               <p className="text-eyebrow uppercase tracking-widest text-rla-smoke font-body mb-3">
@@ -137,8 +137,13 @@ export function AboutSection() {
               <ul className="space-y-2">
                 {CREDENTIALS.map((cred) => (
                   <li key={cred} className="flex items-center gap-2">
-                    <span className="w-1 h-1 rounded-full bg-rla-sienna shrink-0" aria-hidden="true" />
-                    <span className="text-ui-xs font-body text-rla-parchment">{cred}</span>
+                    <span
+                      className="w-1 h-1 rounded-full bg-rla-sienna shrink-0"
+                      aria-hidden="true"
+                    />
+                    <span className="text-ui-xs font-body text-rla-parchment">
+                      {cred}
+                    </span>
                   </li>
                 ))}
               </ul>

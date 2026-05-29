@@ -2,15 +2,16 @@ import { pad } from "@/lib/utils";
 import { ArrowIcon } from "@/components/ui/ArrowIcon";
 
 interface ProcessStep {
-  title:       string;
+  title: string;
   description: string;
-  outputs:     string[];
+  outputs: string[];
 }
 
 const STEPS: ProcessStep[] = [
   {
     title: "Initial Consultation",
-    description: "Every engagement begins with a direct conversation about the project, the timeline, and the decision being made. No intake forms. No junior staff. You talk to Tyler.",
+    description:
+      "Every engagement begins with a direct conversation about the project, the timeline, and the decision being made. No intake forms. No junior staff. You talk to Tyler.",
     outputs: [
       "Project scope clarity",
       "Engagement structure defined",
@@ -19,7 +20,8 @@ const STEPS: ProcessStep[] = [
   },
   {
     title: "Site and Market Analysis",
-    description: "We conduct a comprehensive review of the site, including constraints, entitlement history, comparable transactions, and market absorption, before any numbers are put on paper.",
+    description:
+      "We conduct a comprehensive review of the site, including constraints, entitlement history, comparable transactions, and market absorption, before any numbers are put on paper.",
     outputs: [
       "Constraint mapping",
       "Comp analysis",
@@ -28,7 +30,8 @@ const STEPS: ProcessStep[] = [
   },
   {
     title: "Cost and Feasibility Report",
-    description: "A detailed, line-item horizontal cost estimate and pro forma built from real project data. No templates. The numbers reflect what it actually costs to build in Southern California.",
+    description:
+      "A detailed, line-item horizontal cost estimate and pro forma built from real project data. No templates. The numbers reflect what it actually costs to build in Southern California.",
     outputs: [
       "Line-item cost estimate",
       "Pro forma projections",
@@ -37,7 +40,8 @@ const STEPS: ProcessStep[] = [
   },
   {
     title: "Ongoing Strategic Advisory",
-    description: "For clients who want continued guidance through entitlement, financing, or builder disposition, RLA stays engaged as a strategic partner through to project completion.",
+    description:
+      "For clients who want continued guidance through entitlement, financing, or builder disposition, RLA stays engaged as a strategic partner through to project completion.",
     outputs: [
       "Entitlement support",
       "Capital advisory",
@@ -75,17 +79,12 @@ export function ProcessSection() {
 
         <div className="mt-14 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 pt-10 border-t border-rla-border">
           <p className="text-body-lg font-display font-light text-rla-parchment max-w-[42ch]">
-            Every project starts with a single conversation.
-            There is no cost and no obligation to the first call.
+            Every project starts with a single conversation. There is no cost
+            and no obligation to the first call.
           </p>
-          
+          <a
             href="#contact"
-            className="inline-flex items-center gap-2 shrink-0
-                       h-12 px-8
-                       font-body font-medium text-ui-md uppercase tracking-widest
-                       text-rla-cream border border-rla-border rounded-sm
-                       transition-all duration-350 ease-out-expo
-                       hover:border-rla-sage-muted hover:text-rla-sage-pale"
+            className="inline-flex items-center gap-2 shrink-0 h-12 px-8 font-body font-medium text-ui-md uppercase tracking-widest text-rla-cream border border-rla-border rounded-sm transition-all duration-350 ease-out-expo hover:border-rla-sage-muted hover:text-rla-sage-pale"
           >
             Start the Conversation
             <ArrowIcon />
@@ -126,7 +125,12 @@ function StepCard({ step, index }: { step: ProcessStep; index: number }) {
               key={output}
               className="flex items-start gap-2 text-ui-xs text-rla-stone font-body"
             >
-              <span className="text-rla-sienna-muted shrink-0 mt-px" aria-hidden="true">-</span>
+              <span
+                className="text-rla-sienna-muted shrink-0 mt-px"
+                aria-hidden="true"
+              >
+                -
+              </span>
               {output}
             </li>
           ))}
