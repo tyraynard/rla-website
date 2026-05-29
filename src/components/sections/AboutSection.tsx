@@ -3,15 +3,15 @@ import Image from "next/image";
 const DIFFERENTIATORS = [
   {
     title: "Mortgage Lending",
-    body:  "A decade as a loan officer and processor — deep understanding of how capital structures land acquisitions and what lenders actually underwrite.",
+    body: "A decade as a loan officer and processor, with deep understanding of how capital structures land acquisitions and what lenders actually underwrite.",
   },
   {
     title: "Land Development",
-    body:  "Project management and estimating experience on horizontal projects gives clients exact cost clarity before a dollar is committed.",
+    body: "Project management and estimating experience on horizontal projects gives clients exact cost clarity before a dollar is committed.",
   },
   {
-    title: "Brokerage & Transactions",
-    body:  "Licensed broker with direct transaction experience across Laguna Beach, Dana Point, San Clemente, and the broader South OC corridor.",
+    title: "Brokerage and Transactions",
+    body: "Licensed broker with direct transaction experience across Laguna Beach, Dana Point, San Clemente, and the broader South OC corridor.",
   },
 ];
 
@@ -31,7 +31,6 @@ export function AboutSection() {
       <div className="container-rla">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
 
-          {/* ── Left: Text ── */}
           <div>
             <p className="eyebrow-label mb-6">Who We Are</p>
 
@@ -46,7 +45,7 @@ export function AboutSection() {
 
             <p className="text-body-lg text-rla-parchment font-body font-light leading-relaxed mb-6">
               Tyler Raynard brings 14+ years of experience spanning mortgage
-              lending, land development, and real estate transactions — a
+              lending, land development, and real estate transactions, a
               combination of disciplines that virtually no single advisor can match.
             </p>
 
@@ -57,7 +56,6 @@ export function AboutSection() {
               No blind spots. No hand-offs to generalists.
             </p>
 
-            {/* Differentiators */}
             <ul className="space-y-6" aria-label="Areas of expertise">
               {DIFFERENTIATORS.map((item) => (
                 <li key={item.title} className="flex gap-4">
@@ -77,7 +75,6 @@ export function AboutSection() {
               ))}
             </ul>
 
-            {/* Signature quote */}
             <blockquote className="mt-10 border-l-2 border-rla-sage pl-5">
               <p className="font-display font-light italic text-heading-sm text-rla-parchment leading-snug">
                 &ldquo;People never forget how you make them feel.&rdquo;
@@ -87,7 +84,6 @@ export function AboutSection() {
               </cite>
             </blockquote>
 
-            {/* Trust anchor */}
             <div className="mt-8 flex items-start gap-4 p-5 bg-rla-iron border border-rla-border rounded-sm">
               <span
                 className="mt-1 w-1.5 h-1.5 rounded-full bg-rla-sienna shrink-0"
@@ -95,29 +91,23 @@ export function AboutSection() {
               />
               <p className="text-body-sm font-body font-light text-rla-stone leading-relaxed">
                 <span className="text-rla-cream font-medium">RLA operates as an independent advisor.</span>{" "}
-                No development interest. No ownership stake. No conflict of interest — ever.
+                No development interest. No ownership stake. No conflict of interest. Ever.
                 You get objective analysis from someone whose only incentive is giving you
                 the right answer.
               </p>
             </div>
           </div>
 
-          {/* ── Right: Photo ── */}
           <div className="relative pb-8 md:pb-0">
             <div className="relative aspect-[4/5] rounded-sm overflow-hidden bg-rla-iron border border-rla-border">
-
-              {/* Gradient placeholder */}
               <div
                 className="absolute inset-0"
                 style={{
                   background:
-                    "radial-gradient(ellipse at 40% 30%, rgba(74,97,72,0.18) 0%, transparent 60%), " +
-                    "linear-gradient(135deg, #1A1916 0%, #232119 100%)",
+                    "radial-gradient(ellipse at 40% 30%, rgba(74,97,72,0.18) 0%, transparent 60%), linear-gradient(135deg, #1A1916 0%, #232119 100%)",
                 }}
                 aria-hidden="true"
               />
-
-              {/* Decorative monogram */}
               <div
                 className="absolute inset-0 flex items-center justify-center pointer-events-none"
                 aria-hidden="true"
@@ -126,8 +116,6 @@ export function AboutSection() {
                   RLA
                 </span>
               </div>
-
-              {/* Photo */}
               <Image
                 src="/about-photo.jpg"
                 alt="Tyler Raynard, Founder of Raynard Land Advisory"
@@ -137,8 +125,27 @@ export function AboutSection() {
               />
             </div>
 
-            {/* Floating credential card */}
             <aside
               className="absolute -bottom-2 -left-4 md:left-auto md:-right-6
-                         bg-rla-obsidian border border-rla-border rounded-sm
-                         
+                         bg-rla-obsidian border border-rla-border rounded-sm p-5
+                         shadow-card min-w-[200px]"
+              aria-label="Credentials"
+            >
+              <p className="text-eyebrow uppercase tracking-widest text-rla-smoke font-body mb-3">
+                Credentials
+              </p>
+              <ul className="space-y-2">
+                {CREDENTIALS.map((cred) => (
+                  <li key={cred} className="flex items-center gap-2">
+                    <span className="w-1 h-1 rounded-full bg-rla-sienna shrink-0" aria-hidden="true" />
+                    <span className="text-ui-xs font-body text-rla-parchment">{cred}</span>
+                  </li>
+                ))}
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

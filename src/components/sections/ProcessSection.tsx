@@ -9,9 +9,8 @@ interface ProcessStep {
 
 const STEPS: ProcessStep[] = [
   {
-    title:    "Initial Consultation",
-    description:
-      "Every engagement begins with a direct conversation about the project, the timeline, and the decision being made. No intake forms. No junior staff. You talk to Tyler.",
+    title: "Initial Consultation",
+    description: "Every engagement begins with a direct conversation about the project, the timeline, and the decision being made. No intake forms. No junior staff. You talk to Tyler.",
     outputs: [
       "Project scope clarity",
       "Engagement structure defined",
@@ -19,9 +18,8 @@ const STEPS: ProcessStep[] = [
     ],
   },
   {
-    title:    "Site & Market Analysis",
-    description:
-      "We conduct a comprehensive review of the site — constraints, entitlement history, comparable transactions, and market absorption — before any numbers are put on paper.",
+    title: "Site and Market Analysis",
+    description: "We conduct a comprehensive review of the site, including constraints, entitlement history, comparable transactions, and market absorption, before any numbers are put on paper.",
     outputs: [
       "Constraint mapping",
       "Comp analysis",
@@ -29,9 +27,8 @@ const STEPS: ProcessStep[] = [
     ],
   },
   {
-    title:    "Cost & Feasibility Report",
-    description:
-      "A detailed, line-item horizontal cost estimate and pro forma built from real project data. No templates. The numbers reflect what it actually costs to build in Southern California.",
+    title: "Cost and Feasibility Report",
+    description: "A detailed, line-item horizontal cost estimate and pro forma built from real project data. No templates. The numbers reflect what it actually costs to build in Southern California.",
     outputs: [
       "Line-item cost estimate",
       "Pro forma projections",
@@ -39,13 +36,12 @@ const STEPS: ProcessStep[] = [
     ],
   },
   {
-    title:    "Ongoing Strategic Advisory",
-    description:
-      "For clients who want continued guidance through entitlement, financing, or builder disposition — RLA stays engaged as a strategic partner through to project completion.",
+    title: "Ongoing Strategic Advisory",
+    description: "For clients who want continued guidance through entitlement, financing, or builder disposition, RLA stays engaged as a strategic partner through to project completion.",
     outputs: [
       "Entitlement support",
       "Capital advisory",
-      "Builder / broker positioning",
+      "Builder and broker positioning",
     ],
   },
 ];
@@ -58,7 +54,6 @@ export function ProcessSection() {
       aria-labelledby="process-heading"
     >
       <div className="container-rla">
-
         <div className="mb-14 md:mb-16">
           <p className="eyebrow-label mb-6">How We Work</p>
           <h2
@@ -74,5 +69,69 @@ export function ProcessSection() {
           aria-label="Our process steps"
         >
           {STEPS.map((step, i) => (
+            <StepCard key={step.title} step={step} index={i} />
+          ))}
+        </ol>
 
-            
+        <div className="mt-14 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 pt-10 border-t border-rla-border">
+          <p className="text-body-lg font-display font-light text-rla-parchment max-w-[42ch]">
+            Every project starts with a single conversation.
+            There is no cost and no obligation to the first call.
+          </p>
+          
+            href="#contact"
+            className="inline-flex items-center gap-2 shrink-0
+                       h-12 px-8
+                       font-body font-medium text-ui-md uppercase tracking-widest
+                       text-rla-cream border border-rla-border rounded-sm
+                       transition-all duration-350 ease-out-expo
+                       hover:border-rla-sage-muted hover:text-rla-sage-pale"
+          >
+            Start the Conversation
+            <ArrowIcon />
+          </a>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function StepCard({ step, index }: { step: ProcessStep; index: number }) {
+  return (
+    <li className="bg-rla-charcoal p-8 flex flex-col gap-5">
+      <span
+        className="font-display font-light text-display-lg leading-none text-rla-border"
+        aria-hidden="true"
+      >
+        {pad(index + 1)}
+      </span>
+
+      <span className="block w-8 h-px bg-rla-sienna-muted" aria-hidden="true" />
+
+      <h3 className="font-body font-medium text-heading-sm text-rla-cream">
+        {step.title}
+      </h3>
+
+      <p className="text-body-sm text-rla-stone font-body font-light leading-relaxed flex-1">
+        {step.description}
+      </p>
+
+      <div className="border-t border-rla-border pt-5 mt-auto">
+        <p className="text-eyebrow uppercase tracking-widest text-rla-smoke font-body mb-3">
+          Outputs
+        </p>
+        <ul className="space-y-1.5" aria-label={`${step.title} outputs`}>
+          {step.outputs.map((output) => (
+            <li
+              key={output}
+              className="flex items-start gap-2 text-ui-xs text-rla-stone font-body"
+            >
+              <span className="text-rla-sienna-muted shrink-0 mt-px" aria-hidden="true">-</span>
+              {output}
+            </li>
+          ))}
+        </ul>
+      </div>
+    </li>
+  );
+}
