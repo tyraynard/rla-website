@@ -24,10 +24,10 @@ export function HeroSection() {
         aria-hidden="true"
       />
 
-      {/* ── Background photo (add /public/hero.jpg to activate) ── */}
+      {/* ── Background photo (add /public/hero.png to activate) ── */}
       <div className="absolute inset-0 -z-10" aria-hidden="true">
         <Image
-          src="/hero.jpg"
+          src="/hero.png"
           alt=""
           fill
           priority
