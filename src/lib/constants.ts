@@ -6,7 +6,7 @@
 export const SITE_NAME  = "Raynard Land Advisory";
 export const SITE_SHORT = "RLA";
 export const SITE_URL   = "https://raynardla.com";
-export const SITE_EMAIL = "hello@raynardla.com";
+export const SITE_EMAIL = "tyler@raynardla.com";
 export const SITE_REGION = "South Orange County, California";
 
 export const LINKEDIN_URL = "https://linkedin.com/company/raynard-land-advisory";
