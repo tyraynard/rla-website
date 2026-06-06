@@ -2,19 +2,18 @@ import Image from "next/image"
 
 const DIFFERENTIATORS = [
   {
-    title: "Mortgage Lending",
-    body: "A decade as a loan officer and processor, with deep understanding of how capital structures land acquisitions and what lenders actually underwrite.",
-  },
-  {
     title: "Land Development",
-    body: "Project management and estimating experience on horizontal projects gives clients exact cost clarity before a dollar is committed.",
+    body: "Project management and estimating across the full horizontal development scope — grading, wet and dry utilities, street improvements, landscape, amenities, walls, off-site improvements, and fee analysis. Complete scope clarity before a dollar is committed.",
   },
   {
-    title: "Brokerage and Transactions",
-    body: "Licensed broker with direct transaction experience across Laguna Beach, Dana Point, San Clemente, and the broader South OC corridor.",
+    title: "Technology & AI",
+    body: "Proprietary cost modeling and AI-assisted analysis built to deliver faster, more accurate project intelligence. A modern approach to a historically manual process.",
   },
-];
-
+  {
+    title: "Brokerage & Lending",
+    body: "Licensed California broker with a decade in mortgage lending. A complete understanding of how capital structures land acquisitions and what lenders actually underwrite.",
+  },
+] as const;
 const CREDENTIALS = [
   "CA Licensed Broker",
   "14+ Years Experience",
@@ -38,17 +37,45 @@ export function AboutSection() {
               id="about-heading"
               className="font-display font-light text-heading-xl text-rla-cream mb-6"
             >
-              Three Disciplines.
-              <br />
-              <span className="text-rla-stone">One Advisor.</span>
+              Land Development, Reimagined.{" "}
+              <span className="text-rla-sienna">From the Ground Up.</span>
             </h2>
 
-            <p className="text-body-lg text-rla-parchment font-body font-light leading-relaxed mb-6">
-              Tyler Raynard brings 14+ years of experience spanning mortgage
-              lending, land development, and real estate transactions, a
-              combination of disciplines that virtually no single advisor can
-              match.
-            </p>
+             <p className="text-body-sm font-body font-light text-rla-stone leading-relaxed">
+  Most advisors understand one piece of the puzzle. The broker knows the market.
+  The lender knows the capital stack. The project manager knows the scope. Rarely
+  does one person know all three — and even more rarely do they know how to connect
+  them. That&apos;s what Raynard Land Advisory was built around.
+</p>
+
+<p className="text-body-sm font-body font-light text-rla-stone leading-relaxed">
+  The foundation is land development. Years spent in project management and
+  estimating — reviewing civil plans, analyzing soils and grading reports, pricing
+  full horizontal scopes — grading, wet and dry utilities, street improvements,
+  landscape, amenities, walls, off-site improvements, and fee analysis. That depth
+  of understanding, combined with the relationships built with engineers, consultants,
+  and agencies along the way, means nothing gets overlooked and nobody needs to be
+  educated on the basics.
+</p>
+
+<p className="text-body-sm font-body font-light text-rla-stone leading-relaxed">
+  Layered on top is a background in real estate brokerage and mortgage lending. Not
+  as a footnote — as a genuine advantage. Land deals cross entitlement, financing,
+  cost estimating, and disposition all at once. Having one advisor who understands
+  every lane means the picture is always complete.
+</p>
+
+<p className="text-body-sm font-body font-light text-rla-stone leading-relaxed">
+  What separates RLA today is how all of that experience gets applied. Proprietary
+  tools, AI-assisted analysis, and data-driven cost modeling bring speed and precision
+  to a process the industry has historically done by hand. The result is faster, more
+  accurate project intelligence — and a higher standard for what developers, investors,
+  and lenders should expect from an advisor.
+</p>
+
+<p className="text-rla-sienna font-medium text-sm tracking-wide">
+  The wave is here. RLA is leading it.
+</p>
 
             <p className="text-body-md text-rla-stone font-body font-light leading-relaxed mb-10">
               That three-sided expertise gives clients complete visibility at
