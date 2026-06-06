@@ -1,4 +1,4 @@
-import Image from "next/image";
+
 
 const DIFFERENTIATORS = [
   {
@@ -19,6 +19,7 @@ const CREDENTIALS = [
   "CA Licensed Broker",
   "14+ Years Experience",
   "South Orange County",
+  "CA DRE Lic. 02213778",
 ] as const;
 
 export function AboutSection() {
