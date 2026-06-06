@@ -119,8 +119,8 @@ export function AboutSection() {
                 </span>
               </div>
               <Image
-                src="/about-photo.jpg"
-                alt="Tyler Raynard, Founder of Raynard Land Advisory"
+                src="/tyler-raynard-rla.webp"
+                alt="Tyler Raynard — Founder & Principal, Raynard Land Advisory"
                 fill
                 className="object-cover object-top"
                 sizes="(max-width: 1024px) 100vw, 45vw"
