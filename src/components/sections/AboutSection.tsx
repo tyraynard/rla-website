@@ -77,12 +77,7 @@ export function AboutSection() {
   The wave is here. RLA is leading it.
 </p>
 
-            <p className="text-body-md text-rla-stone font-body font-light leading-relaxed mb-10">
-              That three-sided expertise gives clients complete visibility at
-              every stage of a project: from acquisition financing and
-              feasibility through horizontal cost estimating and final
-              disposition. No blind spots. No hand-offs to generalists.
-            </p>
+
 
             <ul className="space-y-6" aria-label="Areas of expertise">
               {DIFFERENTIATORS.map((item) => (
