@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 const DIFFERENTIATORS = [
   {
@@ -43,40 +44,26 @@ export function AboutSection() {
 
              <p className="text-body-sm font-body font-light text-rla-stone leading-relaxed">
   Most advisors understand one piece of the puzzle. The broker knows the market.
-  The lender knows the capital stack. The project manager knows the scope. Rarely
-  does one person know all three — and even more rarely do they know how to connect
-  them. That&apos;s what Raynard Land Advisory was built around.
+  The lender knows the capital stack. The project manager knows the dirt. Rarely
+  does one person know all three — and almost never do they know how to connect
+  them in a single conversation. Tyler Raynard spent 14 years building exactly
+  that. Mortgage lending, horizontal land development, and real estate transactions
+  — not as separate careers, but as one continuous education in how California land
+  actually gets financed, built, and sold. That background is what RLA was built
+  around. And it is why the clients who work with RLA make better decisions, faster.
 </p>
-
-<p className="text-body-sm font-body font-light text-rla-stone leading-relaxed">
-  The foundation is land development. Years spent in project management and
-  estimating — reviewing civil plans, analyzing soils and grading reports, pricing
-  full horizontal scopes — grading, wet and dry utilities, street improvements,
-  landscape, amenities, walls, off-site improvements, and fee analysis. That depth
-  of understanding, combined with the relationships built with engineers, consultants,
-  and agencies along the way, means nothing gets overlooked and nobody needs to be
-  educated on the basics.
-</p>
-
-<p className="text-body-sm font-body font-light text-rla-stone leading-relaxed">
-  Layered on top is a background in real estate brokerage and mortgage lending. Not
-  as a footnote — as a genuine advantage. Land deals cross entitlement, financing,
-  cost estimating, and disposition all at once. Having one advisor who understands
-  every lane means the picture is always complete.
-</p>
-
-<p className="text-body-sm font-body font-light text-rla-stone leading-relaxed">
-  What separates RLA today is how all of that experience gets applied. Proprietary
-  tools, AI-assisted analysis, and data-driven cost modeling bring speed and precision
-  to a process the industry has historically done by hand. The result is faster, more
-  accurate project intelligence — and a higher standard for what developers, investors,
-  and lenders should expect from an advisor.
-</p>
-
 <p className="text-rla-sienna font-medium text-sm tracking-wide">
   The wave is here. RLA is leading it.
 </p>
-
+<div className="mt-8">
+  <Link
+    href="/about"
+    className="inline-flex items-center gap-2 text-rla-sienna text-xs
+      tracking-widest uppercase hover:gap-4 transition-all"
+  >
+    The Full Story →
+  </Link>
+</div>
 
 
             <ul className="space-y-6" aria-label="Areas of expertise">
