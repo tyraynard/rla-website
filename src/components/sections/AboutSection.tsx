@@ -53,7 +53,7 @@ export function AboutSection() {
   around. And it is why the clients who work with RLA make better decisions, faster.
 </p>
 <p className="text-rla-sienna font-medium text-sm tracking-wide">
-  The wave is here. RLA is leading it.
+  A new wave is forming in land development. RLA plans to be a part of the ride.
 </p>
 <div className="mt-8">
   <Link
