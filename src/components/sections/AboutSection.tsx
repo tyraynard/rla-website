@@ -57,12 +57,14 @@ export function AboutSection() {
 </p>
 <div className="mt-8">
   <Link
-    href="/about"
-    className="inline-flex items-center gap-2 text-rla-sienna text-xs
-      tracking-widest uppercase hover:gap-4 transition-all"
-  >
-    The Full Story →
-  </Link>
+  href="/about"
+  className="inline-flex items-center gap-3 border border-rla-sienna
+    text-rla-sienna text-xs tracking-widest uppercase px-6 py-3
+    hover:bg-rla-sienna hover:text-rla-cream transition-all duration-300"
+>
+  The Full Story
+  <span className="text-base leading-none">→</span>
+</Link>
 </div>
 
 
