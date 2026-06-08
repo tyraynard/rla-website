@@ -13,7 +13,10 @@ export function Footer() {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="bg-rla-black border-t border-rla-border" aria-label="Site footer">
+    <>
+
+<div className="py-5 px-6 flex flex-col sm:flex-row items-center justify-center gap-3 text-center border-t border-b" style={{borderColor:"rgba(122,158,142,0.2)", background:"rgba(122,158,142,0.06)"}}><span className="text-xs tracking-widest uppercase" style={{color:"#6B6358"}}>Part of the Raynard brand ecosystem</span><span style={{color:"#3A3830"}} className="hidden sm:block">·</span><a href="https://raynardrealestate.com" target="_blank" rel="noopener noreferrer" className="text-xs tracking-widest uppercase transition-colors" style={{color:"#7A9E8E"}}>Raynard Real Estate — Residential Brokerage and Property Management</a></div>
+<footer className="bg-rla-black border-t border-rla-border" aria-label="Site footer">
       {/* Main content */}
       <div className="container-rla py-16 md:py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
@@ -120,5 +123,6 @@ export function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }
