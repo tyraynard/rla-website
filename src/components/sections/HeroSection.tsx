@@ -63,9 +63,12 @@ export function HeroSection() {
             className="mt-7 text-body-xl text-rla-parchment font-body font-light max-w-[56ch] leading-relaxed animate-fade-up"
             style={{ animationDelay: "350ms" }}
           >
-            Strategic land advisory, feasibility analysis, and horizontal cost
-            estimating for developers and investors across Southern California.
-          </p>
+            For developers, investors, and lenders who need someone who's been on every side of the deal. We handle the details so you get clarity.
+      </p>
+      <p className="text-sm italic text-rla-parchment/60 mt-3 tracking-widest"
+        style={{ animationDelay: "350ms" }}>
+        Details, simplified.
+      </p>
 
           <div
             className="mt-10 flex flex-col sm:flex-row items-start sm:items-center gap-4 animate-fade-up"
