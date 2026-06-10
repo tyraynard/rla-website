@@ -27,15 +27,15 @@ const bodyFont = DM_Sans({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default:  `${SITE_NAME} — Land Development Consulting`,
+    default:  `${SITE_NAME} — Independent Land Intelligence`,
     template: `%s | ${SITE_NAME}`,
   },
   description:
     "Premium land development advisory in Southern California. " +
     "Feasibility analysis, horizontal cost estimating, and strategic advisory " +
-    "for developers and investors across South Orange County.",
+    "for developers and investors across Southern California.",
   keywords: [
-    "land development consulting",
+    "independent land advisory",
     "feasibility analysis",
     "horizontal cost estimating",
     "land advisory Southern California",
