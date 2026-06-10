@@ -51,7 +51,7 @@ export function AboutSection() {
 <p className="text-rla-sienna font-medium text-sm tracking-wide">
   People never forget how you make them feel. We make the details simple.
 </p>
-<div className="mt-8">
+<div className="mt-8 mb-12">
   <Link
   href="/about"
   className="inline-flex items-center gap-3 border border-rla-sienna
