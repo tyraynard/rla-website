@@ -33,15 +33,6 @@ export function AboutSection() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div>
             {/* Image */}
-<div className="relative w-full aspect-[3/4] overflow-hidden rounded-sm">
-  <Image
-    src="/about-hero.jpg"
-    alt="Tyler Raynard overlooking Laguna Beach"
-    fill
-    className="object-cover"
-    sizes="(max-width: 1024px) 100vw, 50vw"
-  />
-</div>
             <p className="eyebrow-label mb-6">Who We Are</p>
 
             <h2
@@ -71,16 +62,6 @@ export function AboutSection() {
   <span className="text-base leading-none">→</span>
 </Link>
 </div>
-{/* About Image */}
-            <div className="relative w-full aspect-[3/4] overflow-hidden rounded-sm">
-              <Image
-                src="/about-hero.jpg"
-                alt="Tyler Raynard overlooking Laguna Beach"
-                fill
-                className="object-cover"
-                sizes="(max-width: 1024px) 100vw, 50vw"
-              />
-            </div>
 
 
             <ul className="space-y-6" aria-label="Areas of expertise">

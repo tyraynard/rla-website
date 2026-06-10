@@ -42,8 +42,8 @@ export default function AboutPage() {
             <div className="relative aspect-[3/4] max-w-sm overflow-hidden
               border border-rla-border">
               <Image
-                src="/tyler-raynard-rla.webp"
-                alt="Tyler Raynard — Founder & Principal, Raynard Land Advisory"
+                src="/about-hero.jpg"
+                alt="Tyler Raynard overlooking the Southern California coast"
                 fill
                 className="object-cover object-top"
                 priority
