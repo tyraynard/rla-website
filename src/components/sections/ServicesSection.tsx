@@ -14,7 +14,7 @@ interface Service {
 const SERVICES: Service[] = [
   {
     title:    "Feasibility Analysis",
-    tagline:  "Know before you commit.",
+    tagline:  "Clarity before capital is committed.",
     href:     SERVICE_SLUGS.feasibility,
     description:
       "Comprehensive site-level analysis that surfaces risk, validates opportunity, " +
@@ -32,7 +32,7 @@ const SERVICES: Service[] = [
     tagline:  "Precision from the ground up.",
     href:     SERVICE_SLUGS.costEstimating,
     description:
-      "Detailed horizontal development cost estimates — grading, utilities, " +
+      "Detailed horizontal development cost estimates backed by real projects across Southern California — grading, utilities, " +
       "infrastructure, and off-site improvements — built on real project data " +
       "from projects delivered across Southern California.",
     deliverables: [
@@ -44,11 +44,11 @@ const SERVICES: Service[] = [
     ],
   },
   {
-    title:    "Developer & Investor Advisory",
-    tagline:  "Strategy backed by experience.",
+    title:    "Strategic Land Advisory",
+    tagline:  "Independent guidance from acquisition to disposition.",
     href:     SERVICE_SLUGS.advisory,
     description:
-      "Strategic guidance for developers and investors navigating complex land " +
+      "Strategic guidance for developers and investors navigating complex land, with complete objectivity at every stage. " +
       "transactions, entitlements, and project positioning — from raw land " +
       "identification through disposition.",
     deliverables: [
@@ -80,7 +80,7 @@ export function ServicesSection() {
               Advisory Built on Real Experience
             </h2>
             <p className="text-body-md text-rla-stone font-body font-light max-w-[42ch] md:text-right leading-relaxed">
-              Three core disciplines. Each one honed on actual projects, not theory.
+              Three disciplines. One advisor. No conflict of interest.
             </p>
           </div>
         </div>
