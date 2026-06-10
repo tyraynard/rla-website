@@ -113,6 +113,9 @@ export default function AboutPage() {
                 Tyler Raynard, Founder & Principal
               </cite>
             </blockquote>
+            <p className="text-xs italic text-rla-stone/50 tracking-widest mt-4">
+              Details, simplified.
+            </p>
           </div>
         </div>
 
