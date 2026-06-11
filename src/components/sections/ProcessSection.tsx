@@ -29,7 +29,7 @@ const STEPS: ProcessStep[] = [
     ],
   },
   {
-    title: "Cost and Feasibility Report",
+    title: "Cost Report",
     description:
       "A detailed, line-item horizontal cost estimate and pro forma built from real project data. No templates. The numbers reflect what it actually costs to build in Southern California.",
     outputs: [
@@ -39,7 +39,7 @@ const STEPS: ProcessStep[] = [
     ],
   },
   {
-    title: "Ongoing Strategic Advisory",
+    title: "Ongoing Advisory",
     description:
       "For clients who want continued guidance through entitlement, financing, or builder disposition, RLA stays engaged as a strategic partner through to project completion.",
     outputs: [
@@ -64,7 +64,7 @@ export function ProcessSection() {
             id="process-heading"
             className="font-display font-light text-heading-xl text-rla-cream max-w-[28ch]"
           >
-            A Clear Process. No Guesswork.
+            A Clear Process. No Surprises.
           </h2>
         </div>
 
