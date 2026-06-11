@@ -45,7 +45,7 @@ const SERVICES: Service[] = [
   },
   {
     title:    "Strategic Land Advisory",
-    tagline:  "Independent guidance from acquisition to disposition.",
+    tagline:  "Guidance from acquisition to disposition.",
     href:     SERVICE_SLUGS.advisory,
     description:
       "Strategic guidance for developers and investors navigating complex land, with complete objectivity at every stage. " +
@@ -80,7 +80,7 @@ export function ServicesSection() {
               Advisory Built on Real Experience
             </h2>
             <p className="text-body-md text-rla-stone font-body font-light max-w-[42ch] md:text-right leading-relaxed">
-              Three disciplines. One advisor. No conflict of interest.
+              Three disciplines. No conflict of interest.
             </p>
           </div>
         </div>
