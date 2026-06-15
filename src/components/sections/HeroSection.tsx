@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 export function HeroSection() {
   return (
@@ -51,13 +51,13 @@ export function HeroSection() {
             style={{ animationDelay: "480ms" }}
           >
             
-              href="#contact"
+              <a href="#contact"
               className="inline-flex items-center h-12 px-8 font-body font-medium text-ui-md uppercase tracking-widest bg-rla-cream text-rla-black rounded-sm transition-all duration-350 ease-out-expo hover:bg-rla-white hover:shadow-card-hover"
             >
               Start a Conversation
             </a>
             
-              href="#services"
+             <a href="#services"
               className="inline-flex items-center h-12 px-6 font-body font-medium text-ui-md uppercase tracking-widest text-rla-stone border border-rla-border rounded-sm transition-all duration-350 ease-out-expo hover:text-rla-cream hover:border-rla-parchment"
             >
               View Services
