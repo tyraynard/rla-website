@@ -1,4 +1,3 @@
-import { ArrowIcon } from "@/components/ui/ArrowIcon";
 
 
 export function HeroSection() {
