@@ -4,7 +4,7 @@ import Link from "next/link"
 export const metadata: Metadata = {
   title: "Insights | Raynard Land Advisory",
   description:
-    "Market perspective and land development intelligence from Tyler Raynard — feasibility, cost estimating, and Southern California land market analysis.",
+    "Market perspective and land development intelligence from Raynar Land Advisory — feasibility, cost estimating, and Southern California land market analysis.",
 }
 
 const ARTICLES = [
@@ -53,7 +53,7 @@ export default function InsightsPage() {
           </h1>
           <p className="text-rla-stone text-lg leading-relaxed font-light max-w-2xl">
             Land development intelligence, feasibility insights, and Southern
-            California market analysis from Tyler Raynard.
+            California market analysis from RLA.
           </p>
         </div>
 

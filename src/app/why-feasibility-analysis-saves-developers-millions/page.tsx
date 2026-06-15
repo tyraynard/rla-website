@@ -217,10 +217,7 @@ export default function FeasibilityArticle() {
         {/* Author bio */}
         <div className="mt-12 pt-8 border-t border-rla-border">
           <p className="text-rla-stone text-sm leading-relaxed font-light italic">
-            Tyler Raynard is a licensed California real estate broker and land advisor
-            with 14 years of experience in mortgage lending, land development, and
-            transactions. He founded Raynard Land Advisory to serve developers,
-            investors, and lenders across Southern California.
+            Raynard Land Advisory brings 14 years of experience across mortgage lending, land development, and real estate transactions — built to serve developers, investors, and lenders across Southern California.
           </p>
         </div>
 
