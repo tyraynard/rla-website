@@ -1,10 +1,5 @@
 import { ArrowIcon } from "@/components/ui/ArrowIcon";
 
-const STATS = [
-  { value: "14+",  label: "Years Experience"     },
-  { value: "$2B+", label: "In Transaction Value"  },
-  { value: "200+", label: "Parcels Analyzed"       },
-] as const;
 
 export function HeroSection() {
   return (
@@ -63,7 +58,7 @@ export function HeroSection() {
             className="mt-7 text-body-xl text-rla-parchment font-body font-light max-w-[56ch] leading-relaxed animate-fade-up"
             style={{ animationDelay: "350ms" }}
           >
-            For developers, investors, and lenders who need someone who's been on every side of the deal. We handle the details so you get clarity.
+            Southern California's fully independent land advisory. No development interest. No ownership stake. No conflict of interest.
       </p>
       <p className="text-sm italic text-rla-parchment/60 mt-3 tracking-widest"
         style={{ animationDelay: "350ms" }}>
@@ -90,42 +85,8 @@ export function HeroSection() {
           </div>
         </div>
 
-        {/* Stats */}
-        <div
-          className="mt-20 md:mt-28 pt-8 border-t border-rla-border/60 grid grid-cols-3 gap-8 max-w-xl animate-fade-up"
-          style={{ animationDelay: "600ms" }}
-          aria-label="Key statistics"
-        >
-          {STATS.map((stat) => (
-            <div key={stat.value} className="flex flex-col gap-1">
-              <span
-                className="font-display font-light text-display-lg text-rla-cream leading-none"
-                aria-label={`${stat.value} ${stat.label}`}
-              >
-                {stat.value}
-              </span>
-              <span
-                className="text-eyebrow uppercase tracking-widest text-rla-stone font-body"
-                aria-hidden="true"
-              >
-                {stat.label}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
+       
 
-      {/* Scroll indicator */}
-      <div
-        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-fade-in"
-        style={{ animationDelay: "1000ms" }}
-        aria-hidden="true"
-      >
-        <span className="text-eyebrow uppercase tracking-widest text-rla-smoke font-body">
-          Scroll
-        </span>
-        <div className="w-px h-8 bg-gradient-to-b from-rla-sienna-muted/60 to-transparent" />
-      </div>
-    </section>
+      
   );
 }

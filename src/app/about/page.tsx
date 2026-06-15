@@ -237,7 +237,7 @@ export default function AboutPage() {
           <p className="text-rla-stone font-light leading-relaxed mb-8
             max-w-xl">
             Every engagement starts with a direct conversation — no intake
-            process, no junior staff. You talk to Tyler.
+            process, no junior staff. Direct access to RLA's principal advisor from day one.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Link
