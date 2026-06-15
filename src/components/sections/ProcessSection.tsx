@@ -11,7 +11,7 @@ const STEPS: ProcessStep[] = [
   {
     title: "Initial Consultation",
     description:
-      "Every engagement begins with a direct conversation about the project, the timeline, and the decision being made. No intake forms. No junior staff. You talk to Tyler.",
+      "Every engagement begins with a direct conversation about the project, the timeline, and the decision being made. No intake forms. No junior staff. Direct access to RLA's principal advisor from day one.",
     outputs: [
       "Project scope clarity",
       "Engagement structure defined",

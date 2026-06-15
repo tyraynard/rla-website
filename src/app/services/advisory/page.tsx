@@ -69,7 +69,7 @@ export default function AdvisoryPage() {
                 "One advisor across lending, development, and brokerage",
                 "No development interest — fully independent",
                 "No ownership stake or conflict of interest",
-                "Direct access to Tyler Raynard on every engagement",
+                "Direct access to RLA's Advisory Team",
                 "14+ years of Southern California market experience",
                 "Proprietary project database across 6 counties",
               ].map((item) => (
