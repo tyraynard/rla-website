@@ -60,7 +60,7 @@ export function InsightsSection() {
               id="insights-heading"
               className="font-display font-light text-heading-xl text-rla-cream max-w-[24ch]"
             >
-              Market Perspective
+              Land Intelligence
             </h2>
           </div>
           <Link
