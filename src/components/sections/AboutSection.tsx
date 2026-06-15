@@ -43,13 +43,23 @@ export function AboutSection() {
               <span className="text-rla-sienna">From the Ground Up.</span>
             </h2>
 
-             Most advisors know one side of the table. The broker knows the market. The lender knows the capital stack. The project manager knows the dirt. Tyler Raynard knows all three.{" "}
-          <br /><br />
-          Fourteen years across mortgage lending, horizontal land development, and real estate transactions. Not as separate careers. As one continuous education in how California land actually gets financed, built, and sold.{" "}
-          <br /><br />
-          RLA was built around that background. Every engagement is designed to cut through the complexity and hand you back something you can act on. Not a report. A clear answer.
-<p className="text-rla-sienna font-medium text-sm tracking-wide">
-  People never forget how you make them feel. We make the details simple.
+             <p className="text-stone-600 text-base leading-relaxed mb-4">
+  RLA was built around a perspective most advisory firms cannot offer —
+  experience on all three sides of the transaction. Mortgage lending.
+  Horizontal land development. Real estate brokerage.
+</p>
+
+<p className="text-stone-600 text-base leading-relaxed mb-4">
+  That three-sided foundation gives RLA clients something rare: a firm
+  that understands how lenders underwrite, how developers estimate, and
+  how deals are structured — at the same time.
+</p>
+
+<p className="text-stone-600 text-base leading-relaxed mb-6">
+  No siloed advice. No handed-off referrals. One firm. The full picture.
+</p>
+<p className="text-rla-sienna font-display text-lg italic mt-2">
+  Details, simplified.
 </p>
 <div className="mt-8 mb-12">
   <Link

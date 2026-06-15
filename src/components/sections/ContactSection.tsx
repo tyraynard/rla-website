@@ -37,8 +37,9 @@ const INTERESTS = [
 
 const TRUST_SIGNALS = [
   "Responses within one business day",
-  "No sales calls — direct to Tyler Raynard",
+  "No sales calls — direct access to RLA's advisory team",
   "Initial conversation at no cost or obligation",
+  "Independent analysis - no development interest, no ownership stake",
 ] as const;
 
 export function ContactSection() {
@@ -112,12 +113,12 @@ export function ContactSection() {
               id="contact-heading"
               className="font-display font-light text-heading-xl text-rla-cream mb-6"
             >
-              Let&rsquo;s Build Something Remarkable.
+              Start a Conversation.
             </h2>
 
             <p className="text-body-lg text-rla-stone font-body font-light leading-relaxed mb-10 max-w-[42ch]">
               Ready to move from raw land to a viable project? Every engagement
-              starts with a direct conversation — no intake process, no junior staff.
+              starts with a direct conversation.
             </p>
 
             <div className="space-y-5 border-t border-rla-border pt-8">
@@ -134,7 +135,7 @@ export function ContactSection() {
                 <p className="text-eyebrow uppercase tracking-widest text-rla-smoke font-body mb-2">Service Area</p>
                 <p className="text-body-md font-body text-rla-parchment">{SITE_REGION}</p>
                 <p className="text-body-sm font-body text-rla-stone mt-1">
-                  Laguna Beach · Dana Point · San Clemente · Laguna Niguel
+                   Los Angeles · Orange County · Riverside · San Bernardino · San Diego · Ventura
                 </p>
               </div>
             </div>
