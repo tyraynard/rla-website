@@ -42,6 +42,15 @@ const INSIGHTS: Insight[] = [
     readTime:    7,
     accentColor: "from-rla-charcoal to-rla-black",
   },
+  {
+    slug:         "what-southern-california-land-costs-in-2026",
+    category:     "Cost Estimating",
+    title:        "What Southern California Land Development Actually Costs in 2026",
+    summary:      "Material escalation, labor tightening, and utility relocation costs have shifted horizontal budgets significantly. Here is what the numbers look like right now.",
+    date:         "2026-06-17",
+    readTime:     6,
+    accentColor:  "from-rla-sage-deep to-rla-obsidian",
+  },
 ];
 
 export function InsightsSection() {
