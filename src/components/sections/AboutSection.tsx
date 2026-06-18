@@ -45,12 +45,12 @@ export function AboutSection() {
 
              <p className="text-stone-600 text-base leading-relaxed mb-4">
   RLA was built around a perspective most advisory firms cannot offer —
-  experience on all three sides of the transaction. Mortgage lending.
-  Horizontal land development. Real estate brokerage.
+  experience on all four sides of the transaction. Mortgage lending.
+Horizontal land development. Real estate brokerage. Property management.
 </p>
 
 <p className="text-stone-600 text-base leading-relaxed mb-4">
-  That three-sided foundation gives RLA clients something rare: a firm
+  That four-sided foundation gives RLA clients something rare: a firm
   that understands how lenders underwrite, how developers estimate, and
   how deals are structured — at the same time.
 </p>

@@ -28,7 +28,7 @@ const INITIAL_FORM: ContactFormData = {
 };
 
 const INTERESTS = [
-  { value: "",                label: "Select a service area"          },
+  { value: "",                label: "I am inquiring about"           },
   { value: "feasibility",     label: "Feasibility Analysis"           },
   { value: "cost-estimating", label: "Horizontal Cost Estimating"     },
   { value: "advisory",        label: "Developer & Investor Advisory"  },

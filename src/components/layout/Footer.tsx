@@ -6,7 +6,7 @@ const CREDENTIALS = [
   "Licensed Real Estate Broker",
   "CA DRE Lic. 02213778 — South Orange County",
   "14+ Years Industry Experience",
-  "Land Development · Lending · Transactions",
+  "Land Development · Lending · Transactions · Property Management",
 ] as const;
 
 export function Footer() {
@@ -42,7 +42,7 @@ export function Footer() {
               </span>
             </Link>
             <p className="text-body-sm text-rla-stone max-w-[28ch] leading-relaxed mt-4">
-              Premium land development advisory for developers and investors across Southern California.
+              Southern California's premier independent land intelligence platform.
              </p>
           <p className="text-xs italic text-rla-stone/50 tracking-widest mt-2">
             Details, simplified.
